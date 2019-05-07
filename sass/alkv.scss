@@ -1,0 +1,138 @@
+@import 'bootstrap/bootstrap';
+@import 'modules/burger';
+
+:root {
+    font-size: 10px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: $white;
+    z-index: 9999;
+    .logo--col {
+        img {
+            height: 70px;
+            margin: 20px 0;
+            @include media-breakpoint-up(md) {
+                height: 100px;
+            }
+        }
+    }
+    .mobile_menu--button_container--col {
+        position: relative;
+        .circle {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            padding: 14px 0 0 12px;
+            cursor: pointer;
+            .burger-icon {
+                @include burger(25px, 3px, 5px, #222);
+                &.active {
+                    @include burger-to-cross;
+                }
+            }
+        }
+    }
+    .nav_menu--col {
+        display: none;
+        @include media-breakpoint-up(md) {
+            display: block !important;
+        }
+        .nav_menu {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+            @include media-breakpoint-up(md) {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+            .nav_menu--item {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                text-align: center;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                a {
+                    padding: 10px 0;
+                    color: $black;
+                    display: block;
+                    text-decoration: none;
+                    @include media-breakpoint-up(md) {
+                        padding: 0 15px;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        padding: 0 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#hero {
+    margin-top: 110px;
+    @include media-breakpoint-up(md) {
+        margin-top: 140px;
+    }
+    #hero--slider {
+        position: relative;
+        .hero--item {
+            height: 420px;
+            background: $red;
+            @include media-breakpoint-up(md) {
+                height: 640px;
+            }
+        }
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-size: 3rem;
+            color: $white;
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+            .disabled {
+                visibility: hidden;
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            @include media-breakpoint-up(md) {
+                bottom: 100px;
+            }
+            .owl-dot {
+                margin: 0 10px;
+                @include media-breakpoint-up(md) {
+                    margin: 0 25px;
+                }
+                span {
+                    background: rgba(255,255,255,0.5);
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+                    border-radius: 5px;
+                }
+                &.active {
+                    span {
+                        border: 3px solid $white;
+                    }
+                }
+            }
+        }
+    }
+}
