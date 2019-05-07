@@ -61,9 +61,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
   color: #495057;
   text-align: left;
   background-color: #fff;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 3em;
 }
 
 abbr[title],
@@ -365,31 +365,31 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2, .h2 {
-  font-size: 3.2rem;
-}
-
-h3, .h3 {
   font-size: 2.8rem;
 }
 
+h3, .h3 {
+  font-size: 2.45rem;
+}
+
 h4, .h4 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
 }
 
 h5, .h5 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h6, .h6 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .lead {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 300;
 }
 
@@ -460,7 +460,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .blockquote-footer {
@@ -1776,10 +1776,10 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(3.6rem + 2px);
+  height: calc(4rem + 2px);
   padding: 0.6rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  font-size: 1.4rem;
+  line-height: 2;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
@@ -1828,20 +1828,20 @@ select.form-control:focus::-ms-value {
   padding-bottom: calc(0.6rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .col-form-label-lg {
   padding-top: calc(0.8rem + 1px);
   padding-bottom: calc(0.8rem + 1px);
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.5;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.4rem + 1px);
   padding-bottom: calc(0.4rem + 1px);
-  font-size: 2.24rem;
+  font-size: 1.96rem;
   line-height: 1.5;
 }
 
@@ -1851,7 +1851,7 @@ select.form-control:focus::-ms-value {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 2;
   color: #495057;
   background-color: transparent;
   border: solid transparent;
@@ -1863,17 +1863,17 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-sm {
-  height: calc(4.16rem + 2px);
+  height: calc(3.74rem + 2px);
   padding: 0.4rem 0.8rem;
-  font-size: 2.24rem;
+  font-size: 1.96rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
 
 .form-control-lg {
-  height: calc(6.4rem + 2px);
+  height: calc(5.8rem + 2px);
   padding: 0.8rem 1.6rem;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -1955,8 +1955,8 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.4rem 0.8rem;
   margin-top: 0.1rem;
-  font-size: 2.24rem;
-  line-height: 1.5;
+  font-size: 1.96rem;
+  line-height: 2;
   color: #fff;
   background-color: rgba(40, 167, 69, 0.9);
   border-radius: 0.25rem;
@@ -2047,8 +2047,8 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.4rem 0.8rem;
   margin-top: 0.1rem;
-  font-size: 2.24rem;
-  line-height: 1.5;
+  font-size: 1.96rem;
+  line-height: 2;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -2188,9 +2188,9 @@ textarea.form-control {
   user-select: none;
   border: 1px solid transparent;
   padding: 0.6rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  border-radius: 1.5em;
+  font-size: 1.4rem;
+  line-height: 2;
+  border-radius: 2em;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media screen and (prefers-reduced-motion: reduce) {
@@ -2671,14 +2671,14 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.8rem 1.6rem;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.5;
   border-radius: 1.5em;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.4rem 0.8rem;
-  font-size: 2.24rem;
+  font-size: 1.96rem;
   line-height: 1.5;
   border-radius: 1.5em;
 }
@@ -2758,7 +2758,7 @@ input[type=button].btn-block {
   min-width: 16rem;
   padding: 0.8rem 0;
   margin: 0.2rem 0 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #495057;
   text-align: left;
   list-style: none;
@@ -2904,7 +2904,7 @@ input[type=button].btn-block {
   display: block;
   padding: 0.8rem 2.4rem;
   margin-bottom: 0;
-  font-size: 2.24rem;
+  font-size: 1.96rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -3121,9 +3121,9 @@ input[type=button].btn-block {
   align-items: center;
   padding: 0.6rem 1.2rem;
   margin-bottom: 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
   color: #495057;
   text-align: center;
   white-space: nowrap;
@@ -3141,9 +3141,9 @@ input[type=button].btn-block {
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
-  height: calc(6.4rem + 2px);
+  height: calc(5.8rem + 2px);
   padding: 0.8rem 1.6rem;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -3153,9 +3153,9 @@ input[type=button].btn-block {
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
-  height: calc(4.16rem + 2px);
+  height: calc(3.74rem + 2px);
   padding: 0.4rem 0.8rem;
-  font-size: 2.24rem;
+  font-size: 1.96rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3183,7 +3183,7 @@ input[type=button].btn-block {
 .custom-control {
   position: relative;
   display: block;
-  min-height: 2.4rem;
+  min-height: 2.8rem;
   padding-left: 2.4rem;
 }
 
@@ -3221,7 +3221,7 @@ input[type=button].btn-block {
 }
 .custom-control-label::before {
   position: absolute;
-  top: 0.4rem;
+  top: 0.6rem;
   left: -2.4rem;
   display: block;
   width: 1.6rem;
@@ -3233,7 +3233,7 @@ input[type=button].btn-block {
 }
 .custom-control-label::after {
   position: absolute;
-  top: 0.4rem;
+  top: 0.6rem;
   left: -2.4rem;
   display: block;
   width: 1.6rem;
@@ -3282,9 +3282,9 @@ input[type=button].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(3.6rem + 2px);
+  height: calc(4rem + 2px);
   padding: 0.6rem 2.8rem 0.6rem 1.2rem;
-  line-height: 1.5;
+  line-height: 2;
   color: #495057;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 1.2rem center;
@@ -3316,14 +3316,14 @@ input[type=button].btn-block {
 }
 
 .custom-select-sm {
-  height: calc(4.16rem + 2px);
+  height: calc(3.74rem + 2px);
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   font-size: 75%;
 }
 
 .custom-select-lg {
-  height: calc(6.4rem + 2px);
+  height: calc(5.8rem + 2px);
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   font-size: 125%;
@@ -3333,7 +3333,7 @@ input[type=button].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(3.6rem + 2px);
+  height: calc(4rem + 2px);
   margin-bottom: 0;
 }
 
@@ -3341,7 +3341,7 @@ input[type=button].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(3.6rem + 2px);
+  height: calc(4rem + 2px);
   margin: 0;
   opacity: 0;
 }
@@ -3365,9 +3365,9 @@ input[type=button].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(3.6rem + 2px);
+  height: calc(4rem + 2px);
   padding: 0.6rem 1.2rem;
-  line-height: 1.5;
+  line-height: 2;
   color: #495057;
   background-color: #fff;
   border: 1px solid #ced4da;
@@ -3380,9 +3380,9 @@ input[type=button].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
-  height: 3.6rem;
+  height: 4rem;
   padding: 0.6rem 1.2rem;
-  line-height: 1.5;
+  line-height: 2;
   color: #495057;
   content: "Browse";
   background-color: #e9ecef;
@@ -3611,10 +3611,10 @@ input[type=button].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: -0.4rem;
-  padding-bottom: -0.4rem;
+  padding-top: -0.6rem;
+  padding-bottom: -0.6rem;
   margin-right: 1rem;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -3652,11 +3652,11 @@ input[type=button].btn-block {
 
 .navbar-toggler {
   padding: 0.4rem 1.2rem;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 1.5em;
+  border-radius: 2em;
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
@@ -4237,7 +4237,7 @@ input[type=button].btn-block {
 
 .pagination-lg .page-link {
   padding: 1.2rem 2.4rem;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.5;
 }
 .pagination-lg .page-item:first-child .page-link {
@@ -4251,7 +4251,7 @@ input[type=button].btn-block {
 
 .pagination-sm .page-link {
   padding: 0.4rem 0.8rem;
-  font-size: 2.24rem;
+  font-size: 1.96rem;
   line-height: 1.5;
 }
 .pagination-sm .page-item:first-child .page-link {
@@ -4404,7 +4404,7 @@ input[type=button].btn-block {
 }
 
 .alert-dismissible {
-  padding-right: 6.4rem;
+  padding-right: 6.1rem;
 }
 .alert-dismissible .close {
   position: absolute;
@@ -4522,7 +4522,7 @@ input[type=button].btn-block {
   display: flex;
   height: 1.6rem;
   overflow: hidden;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -4741,7 +4741,7 @@ input[type=button].btn-block {
 
 .close {
   float: right;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -4859,7 +4859,7 @@ button.close {
 
 .modal-title {
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .modal-body {
@@ -4920,7 +4920,7 @@ button.close {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -4931,7 +4931,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 2.24rem;
+  font-size: 1.96rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5022,7 +5022,7 @@ button.close {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -5033,7 +5033,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 2.24rem;
+  font-size: 1.96rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -5154,7 +5154,7 @@ button.close {
 .popover-header {
   padding: 0.8rem 1.2rem;
   margin-bottom: 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #212529;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -8614,6 +8614,13 @@ h3 {
   font-size: 10px;
 }
 
+/* COMMON STYLES */
+.section--title {
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  margin-bottom: 6rem;
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -8713,6 +8720,11 @@ h3 {
     height: 100%;
   }
 }
+@media (max-width: 767.98px) {
+  #header .nav_menu--col .nav_menu {
+    margin-bottom: 5rem;
+  }
+}
 #header .nav_menu--col .nav_menu .nav_menu--item {
   margin: 0;
   padding: 0;
@@ -8722,7 +8734,7 @@ h3 {
   line-height: 1.7rem;
 }
 #header .nav_menu--col .nav_menu .nav_menu--item a {
-  padding: 10px 0;
+  padding: 15px 0;
   color: #000;
   display: block;
   text-decoration: none;
@@ -8750,7 +8762,7 @@ h3 {
   position: relative;
 }
 #hero #hero--slider .hero--item {
-  height: 420px;
+  height: 500px;
   background: #dc3545;
 }
 @media (min-width: 768px) {
@@ -8779,7 +8791,7 @@ h3 {
 }
 #hero #hero--slider .owl-dots {
   position: absolute;
-  bottom: 50px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -8805,6 +8817,35 @@ h3 {
 }
 #hero #hero--slider .owl-dots .owl-dot.active span {
   border: 3px solid #fff;
+}
+
+#about {
+  background: url("../images/about--bg@2x.png") center top no-repeat;
+  position: relative;
+  margin-top: -70px;
+  z-index: 2;
+  padding: 150px 0 100px;
+  color: #fff;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #about {
+    margin-top: -50px;
+    padding-top: 100px;
+    background-size: cover;
+  }
+}
+@media (max-width: 767.98px) {
+  #about #about--figure {
+    margin-bottom: 5rem;
+  }
+}
+#about #about--figure figcaption {
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+#about p {
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=alkv.css.map */

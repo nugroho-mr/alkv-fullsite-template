@@ -5,6 +5,14 @@
     font-size: 10px;
 }
 
+/* COMMON STYLES */
+
+.section--title {
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+    margin-bottom: 6rem;
+}
+
 #header {
     position: fixed;
     width: 100%;
@@ -52,6 +60,9 @@
                 align-items: center;
                 height: 100%;
             }
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 5rem;
+            }
             .nav_menu--item {
                 margin: 0;
                 padding: 0;
@@ -60,7 +71,7 @@
                 font-size: 1.4rem;
                 line-height: 1.7rem;
                 a {
-                    padding: 10px 0;
+                    padding: 15px 0;
                     color: $black;
                     display: block;
                     text-decoration: none;
@@ -84,7 +95,7 @@
     #hero--slider {
         position: relative;
         .hero--item {
-            height: 420px;
+            height: 500px;
             background: $red;
             @include media-breakpoint-up(md) {
                 height: 640px;
@@ -109,7 +120,7 @@
         }
         .owl-dots {
             position: absolute;
-            bottom: 50px;
+            bottom: 80px;
             left: 50%;
             transform: translateX(-50%);
             @include media-breakpoint-up(md) {
@@ -134,5 +145,32 @@
                 }
             }
         }
+    }
+}
+
+#about {
+    background: url('../images/about--bg@2x.png') center top no-repeat;
+    position: relative;
+    margin-top: -70px;
+    z-index: 2;
+    padding: 150px 0 100px;
+    color: $white;
+    background-size: cover;
+    @include media-breakpoint-up(md) {
+        margin-top: -50px;
+        padding-top: 100px;
+        background-size: cover;
+    }
+    #about--figure {
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 5rem;
+        }
+        figcaption {
+            font-size: 1.2rem;
+            opacity: 0.6;
+        }
+    }
+    p {
+        opacity: 0.6;
     }
 }
