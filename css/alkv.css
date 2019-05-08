@@ -8623,6 +8623,13 @@ h3 {
   line-height: 4.3rem;
 }
 
+.section--separator hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
 p.plain {
   margin: 0;
 }
@@ -8954,6 +8961,30 @@ p.plain {
 }
 #team .team--list .team--item .social--links a .fa-linkedin {
   color: #0077B5;
+}
+
+#company_profile {
+  padding: 60px 0;
+}
+@media (max-width: 767.98px) {
+  #company_profile .company_profile--img--col img {
+    display: inline-block;
+    margin: 0 auto 5rem auto;
+  }
+}
+@media (min-width: 768px) {
+  #company_profile .company_profile--desc--col {
+    padding-left: 6rem;
+  }
+}
+#company_profile .company_profile--desc--col .link_to--dl_compro {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 2rem 6rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=alkv.css.map */

@@ -15,6 +15,15 @@
     }
 }
 
+.section--separator {
+    hr {
+        height: 0;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        width: 100%;
+    }
+}
+
 p.plain {
     margin: 0;
 }
@@ -285,6 +294,32 @@ p.plain {
                     }
                 }
             }
+        }
+    }
+}
+
+#company_profile {
+    padding: 60px 0;
+    .company_profile--img--col {
+        img {
+            @include media-breakpoint-down(sm) {
+                display: inline-block;
+                margin: 0 auto 5rem auto;
+            }
+        }
+    }
+    .company_profile--desc--col {
+        @include media-breakpoint-up(md) {
+            padding-left: 6rem;
+        }
+        .link_to--dl_compro {
+            display: inline-block;
+            background: $black;
+            color: $white;
+            text-decoration: none;
+            padding: 2rem 6rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
         }
     }
 }
