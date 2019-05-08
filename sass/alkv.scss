@@ -7,10 +7,20 @@
 
 /* COMMON STYLES */
 
-.section--title {
-    font-size: 3.6rem;
-    line-height: 4.3rem;
+.section--header {
     margin-bottom: 6rem;
+    .section--title {
+        font-size: 3.6rem;
+        line-height: 4.3rem;
+    }
+}
+
+p.plain {
+    margin: 0;
+}
+
+.h-100 {
+    height: 100%;
 }
 
 #header {
@@ -18,7 +28,8 @@
     width: 100%;
     top: 0;
     background: $white;
-    z-index: 9999;
+    z-index: 999;
+    border-bottom: 1px solid #eaeaea;
     .logo--col {
         img {
             height: 70px;
@@ -172,5 +183,64 @@
     }
     p {
         opacity: 0.6;
+    }
+}
+
+#latest_blog {
+    padding: 80px 0;
+    .link_to--archives {
+        a {
+            color: $black;
+            border-bottom: 0.3rem solid #FFE400;
+            padding-bottom: 0.5rem;
+            text-decoration: none;
+        }
+        .fa {
+            font-size: 1rem;
+        }
+    }
+    .blog--list {
+        .blog--item {
+            a {
+                text-decoration: none;
+            }
+            .inner_container {
+                @include media-breakpoint-down(sm) {
+                    padding: 2.2rem 2rem;
+                    border: 1px solid $gray-200;
+                    margin-bottom: 5rem;
+                }
+            }
+            .blog--feature {
+                margin-bottom: 2rem;
+            }
+            .blog--meta {
+                margin: 0;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+                color: $gray-900;
+            }
+            .blog--title {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+#video {
+    background: url('../images/video--bg.jpg') center no-repeat;
+    background-size: cover;
+    height: 500px;
+    @include media-breakpoint-up(md) {
+        height: 640px;
+    }
+    .section--header {
+        padding-top: 60px;
+    }
+    .section--content {
+        padding-bottom: 60px;
+    }
+    .player--icon {
+        width: 64px;
     }
 }

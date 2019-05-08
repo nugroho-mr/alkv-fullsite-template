@@ -24,6 +24,13 @@ jQuery(function($) {
             
         });
 
+        // Video Popup
+        $('.video-gallery').lightGallery({
+            controls: false,
+            counter: false,
+            zoom: false
+        });
+
     })
 
 });
