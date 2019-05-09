@@ -13,6 +13,19 @@ jQuery(function($) {
             }
         });
 
+        // Smooth Scroll
+
+        $(".smooth_button").click(function(e) {
+            e.preventDefault();
+            if( $(window).width() <= 767 ) {
+                $('.mobile_menu--button_container--col .circle').trigger('click');
+            }
+            var seconds = Math.abs($($(this).data('anchor')).offset().top - $(window).scrollTop());
+            $('html, body').animate({
+                scrollTop: $($(this).data('anchor')).offset().top-120
+            }, seconds);
+        });
+
         // Hero Slider
         $('#hero--slider').owlCarousel({
             items: 1,
@@ -21,7 +34,8 @@ jQuery(function($) {
                 '&#8592;',
                 '&#8594;'
             ],
-            
+            autoplay: true,
+            loop: true            
         });
 
         // Video Popup
@@ -29,6 +43,25 @@ jQuery(function($) {
             controls: false,
             counter: false,
             zoom: false
+        });
+
+        // Instagram Feed
+        $('#instagram--carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                680: {
+                    items: 2,
+                    margin: 30,
+                },
+                980: {
+                    items: 3,
+                    margin:30
+                }
+            }
         });
 
     })

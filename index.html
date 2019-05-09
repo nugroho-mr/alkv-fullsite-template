@@ -35,13 +35,13 @@
                 </div>
                 <div class="col-12 col-md flex-grow-md-1 nav_menu--col">
                     <ul class="nav_menu">
-                        <li class="nav_menu--item active"><a href="#about">About</a></li>
-                        <li class="nav_menu--item"><a href="#services">Services</a></li>
-                        <li class="nav_menu--item"><a href="#blog">Blog</a></li>
-                        <li class="nav_menu--item"><a href="#portfolio">Portfolio</a></li>
-                        <li class="nav_menu--item"><a href="#team">Team</a></li>
-                        <li class="nav_menu--item"><a href="#download">Download</a></li>
-                        <li class="nav_menu--item"><a href="#contact">Contact</a></li>
+                        <li class="nav_menu--item active"><a class="smooth_button" href="#" data-anchor="#about">About</a></li>
+                        <li class="nav_menu--item"><a class="smooth_button" href="#" data-anchor="#services">Services</a></li>
+                        <li class="nav_menu--item"><a class="smooth_button" href="#" data-anchor="#latest_blog">Blog</a></li>
+                        <li class="nav_menu--item"><a class="smooth_button" href="#" data-anchor="#video">Video</a></li>
+                        <li class="nav_menu--item"><a class="smooth_button" href="#" data-anchor="#team">Team</a></li>
+                        <li class="nav_menu--item"><a class="smooth_button" href="#" data-anchor="#company_profile">Download</a></li>
+                        <li class="nav_menu--item"><a class="smooth_button" href="#" data-anchor="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,11 +50,23 @@
 
     <section id="hero" >
         <div class="owl-carousel" id="hero--slider">
-            <div class="hero--item" id="hero--item_01">
-                Hero 1
+            <div class="hero--item" id="hero--item_01" style="background: url('images/hero--bg.jpg');">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col col-md-9">
+                            <h2>Mengajak yang muda untuk selalu berfikir #kreativ</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="hero--item" id="hero--item_01">
-                Hero 2
+            <div class="hero--item" id="hero--item_02" style="background: url('images/hero--bg.jpg');">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col col-md-9">
+                            <h2>Mengajak yang muda untuk selalu berfikir #kreativ</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -72,6 +84,33 @@
                     <div class="section--header"><h2 class="section--title text-white">About</h2></div>
                     <p>Mengajak yang muda untuk selalu berfikir #kreativ. ALKV lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row section--header">
+                <div class="col section--title">
+                    <h2>Services</h2>
+                </div>
+            </div>
+            <div class="row section--content flex-wrap services--list">
+                <div class="col-12 col-md-3 service--item">
+                    <img src="images/socmed-marketing.png" />
+                    <h5>Social Media Marketing</h5>
+                </div>
+                <div class="col-12 col-md-3 service--item">
+                    <img src="images/digital-marketing.png" /><h5>Digital Marketing</h5>
+                </div>
+                <div class="col-12 col-md-3 service--item">
+                    <img src="images/wm-app.png" />
+                    <h5>Website &amp; Mobile Application</h5>
+                </div>
+                <div class="col-12 col-md-3 service--item">
+                    <img src="images/brand-activation.png" />
+                    <h5>Brand Activation</h5>
                 </div>
             </div>
         </div>
@@ -240,6 +279,109 @@
         </div>
     </section>
     
+    <section class="section--separator">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <hr />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instagram">
+        <div class="container">
+            <div class="row section--header">
+                <div class="col">
+                    <h2>Instagram</h2>
+                </div>
+            </div>
+            <div class="row section--content">
+                <div class="col">
+                    <div class="owl-carousel" id="instagram--carousel">
+                        <div class="instagram--item">
+                            <img src="images/ig--01.jpg" />
+                        </div>
+                        <div class="instagram--item">
+                            <img src="images/ig--02.jpg" />
+                        </div>
+                        <div class="instagram--item">
+                            <img src="images/ig--03.jpg" />
+                        </div>
+                        <div class="instagram--item">
+                            <img src="images/ig--04.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section--separator">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <hr />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row section--header">
+                <div class="col section--title">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+        </div>
+        <div class="map_form--container">
+            <div class="d-flex flex-column flex-md-row">
+                <div class="google_maps--container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4419239634394!2d106.80782931454151!3d-6.591865666271501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5d1620a71e9%3A0x67b101f26700bee5!2sKolaborato!5e0!3m2!1sen!2sid!4v1557372338284!5m2!1sen!2sid" width="100%" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="contact_form--container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="E-mail address" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="write a message.." />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="form-control" value="Send" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row flex-wrap">
+                <div class="col-12">
+                    <div class="social--links"><a href="#"><i class="fab fa-instagram"></i></a>&emsp;<a href="#"><i class="fab fa-youtube"></i></a></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="plain">&copy; 2019 ALKV Creative. All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-md-right">
+                    <p class="plain">www.alkvcreative.id</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
