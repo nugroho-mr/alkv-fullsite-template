@@ -9077,17 +9077,21 @@ p.plain {
   height: 3.2rem;
   font-weight: 700;
   text-decoration: none;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 @media (max-width: 767.98px) {
   #blog_archives .filters a {
     margin-bottom: 16px;
   }
 }
-#blog_archives .filters a:not(:last-child) {
-  margin-right: 8px;
-}
-#blog_archives .filters a:not(:first-child) {
-  margin-left: 8px;
+@media (min-width: 768px) {
+  #blog_archives .filters a:last-child {
+    margin-right: 0;
+  }
+  #blog_archives .filters a:first-child {
+    margin-left: 0;
+  }
 }
 #blog_archives .filters a:hover {
   background-color: #000;
@@ -9100,6 +9104,63 @@ p.plain {
   color: #000;
   text-decoration: none;
   font-weight: 700;
+}
+
+#single_blog {
+  margin-top: 140px;
+  padding: 60px 0;
+}
+#single_blog .single_blog_tag {
+  margin-bottom: 4rem;
+}
+#single_blog .single_blog_tag span {
+  display: inline-block;
+  color: #000;
+  background: #e9ecef;
+  border-radius: 8px;
+  padding: 0 17px;
+  line-height: 3.2rem;
+  height: 3.2rem;
+  font-weight: 700;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+@media (max-width: 767.98px) {
+  #single_blog .single_blog_tag span {
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 768px) {
+  #single_blog .single_blog_tag span:last-child {
+    margin-right: 0;
+  }
+  #single_blog .single_blog_tag span:first-child {
+    margin-left: 0;
+  }
+}
+#single_blog .single_blog_content .single_blog--title {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+#single_blog .single_blog_content .single_blog--date {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+#single_blog .single_blog_content .single_blog--feature {
+  margin-bottom: 4rem;
+}
+#single_blog .single_blog_content .single_blog--share {
+  margin-bottom: 76px;
+}
+#single_blog .single_blog_content .single_blog--share p {
+  font-size: 32px;
+}
+#single_blog .single_blog_content .single_blog--share p a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+#single_blog .single_blog_content .single_blog--share p a:hover {
+  color: #000;
 }
 
 #contact {
